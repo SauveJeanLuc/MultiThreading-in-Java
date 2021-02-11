@@ -9,10 +9,11 @@ public class ExtendThread extends Thread{
     }
 
     public void run(){
-        for(int i =0; i<= getNumber(); i++){
+        for(int i =0; i<= getNumber().intValue(); i++){
             System.out.println("insideThread: "+getName()+ " Number: " + i);
         }
     }
+
 
     // Getters and Setters
 
