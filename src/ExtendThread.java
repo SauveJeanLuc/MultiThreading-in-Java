@@ -16,6 +16,7 @@ public class ExtendThread extends Thread{
     }
 
     public void Start(){
+        System.out.println("Thread testing");
         if(th == null)
             th = new Thread(this,"Text");
             th.start();
