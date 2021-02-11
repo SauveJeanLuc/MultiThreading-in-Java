@@ -1,5 +1,6 @@
 public class ExtendThread extends Thread{
 
+    private Thread th;
     private Long number;
     private String threadName;
 
@@ -12,6 +13,12 @@ public class ExtendThread extends Thread{
         for(int i =0; i<= getNumber().intValue(); i++){
             System.out.println("insideThread: "+getName()+ " Number: " + i);
         }
+    }
+
+    public void Start(){
+        if(th == null)
+            th = new Thread(this,"Text");
+            th.start();
     }
 
 
